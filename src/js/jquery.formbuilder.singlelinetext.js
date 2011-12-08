@@ -82,6 +82,8 @@ var FbSingleLineText = $.extend({}, $.fb.fbWidget.prototype, {
 		fb.target._log('fbSingleLineText._getFieldSettingsLanguageSection executing...');
 		var $label = fb.target._label({ label: 'Label', name: 'field.label' })
                          .append('<input type="text" id="field.label" />');
+                         
+                         fb.target._log("FB SETTINGS");
     $('input', $label).val(fb.settings.label)
      .keyup(function(event) {
  	      var value = $(this).val();
